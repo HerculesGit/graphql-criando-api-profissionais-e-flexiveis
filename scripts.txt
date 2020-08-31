@@ -1,0 +1,19 @@
+# instalar o knex com o postgres
+npm i -s knex pg
+
+# para rodar o knex
+npx knex init
+
+
+# cria a primeira migration. É uma pasta 'migration' com a data com _tabela_perfis
+npx knex migrate:make tabela_perfis
+
+# cria outra migration. Lembrando que o nome da migration é a data/hora atual com _tabela_usuarios
+npx knex migrate:make tabela_usuarios
+
+# cria outra migration. Lembrando que o nome da migration é a data/hora atual com tabela_usuarios_perfis
+npx knex migrate:make tabela_usuarios_perfis
+
+
+
+
